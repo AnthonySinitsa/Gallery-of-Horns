@@ -23,7 +23,7 @@ class HornedBeast extends React.Component {
     return (
       <Card className="HornedBeast">
         <Card.Title>{this.props.title}</Card.Title>
-        <p>❤️{this.state.likes}</p>
+        <Card.Text>❤️{this.state.likes}</Card.Text>
         <Card.Img
           onClick={this.handleLikes}
           src={this.props.src}
@@ -31,8 +31,7 @@ class HornedBeast extends React.Component {
           title={this.props.title}
         />
         <Card.Body>
-          <p>{this.props.alt}</p>
-          <p>{this.props.text}</p>
+          <Card.Text>{this.props.text}</Card.Text>
           {/* <Button>BootStrap Button</Button> */}
         </Card.Body>
       </Card>
