@@ -1,8 +1,9 @@
 .HornedBeast{
   border: 1px solid grey;
-  width: 24%;
+  width: 75%;
+  height: auto;
   padding: 1rem;
-  margin: 1rem;
+  margin: 4rem;
 }
 
 .HornedBeast img{

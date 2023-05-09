@@ -1,6 +1,7 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import './hornedBeast.css';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -20,18 +21,21 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <article>
-        <h2>{this.props.title}</h2>
-        <p>❤️{this.state.likes}likes</p>
-        <p onClick={this.handleLikes}>Like me here</p>
-        <img
+      <Card className="HornedBeast">
+        <Card.Title>{this.props.title}</Card.Title>
+        <p>❤️{this.state.likes}</p>
+        <Card.Img
+          onClick={this.handleLikes}
           src={this.props.src}
           alt={this.props.alt}
           title={this.props.title}
-        ></img>
-        <p>{this.props.alt}</p>
-        <Button>BootStrap Button</Button>
-      </article>
+        />
+        <Card.Body>
+          <p>{this.props.alt}</p>
+          <p>{this.props.text}</p>
+          {/* <Button>BootStrap Button</Button> */}
+        </Card.Body>
+      </Card>
     )
   }
 };
