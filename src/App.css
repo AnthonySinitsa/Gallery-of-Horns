@@ -3,6 +3,10 @@ body{
   width: 99%;
 }
 
+header p{
+  text-align: center;
+  font-size: 3rem;
+}
 h1{
   font-size: 5vw;
   text-align: center;

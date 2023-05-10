@@ -16,7 +16,7 @@ class HornedBeast extends React.Component {
     this.setState({
       likes: this.state.likes + 1
     });
-    //setState basically causes render to be invoked again
+    // this.props.handleShowModal(this.props.name)
   }
 
   render() {
@@ -25,7 +25,11 @@ class HornedBeast extends React.Component {
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Text>❤️{this.state.likes}</Card.Text>
         <Card.Img
-          onClick={this.handleLikes}
+          onClick={() => {
+            this.handleLikes();
+            this.props.addHearts();
+            this.props.handleShowModal(this.props.beast);
+          }}
           src={this.props.src}
           alt={this.props.alt}
           title={this.props.title}
