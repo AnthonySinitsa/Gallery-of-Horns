@@ -1,6 +1,5 @@
 //1. import react
 import React from 'react';
-//import compenent files that i want to use in App
 import Main from './Main.js';
 import Header from './Header.js';
 import Footer from './Footer.js';
@@ -47,7 +46,7 @@ class App extends React.Component {
         />
         <Main
           addHearts={this.addHearts}
-          data={data}
+          data={this.state.rawData}
           handleShowModal={this.handleShowModal}
         />
         <Footer />
