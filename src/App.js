@@ -4,7 +4,6 @@ import Main from './Main.js';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import './App.css';
-import data from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 
 //2. declare the class
