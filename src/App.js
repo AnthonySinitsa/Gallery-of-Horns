@@ -1,11 +1,9 @@
 //1. import react
 import React from 'react';
-//import compenent files that i want to use in App
 import Main from './Main.js';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import './App.css';
-import data from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 
 //2. declare the class
@@ -47,7 +45,7 @@ class App extends React.Component {
         />
         <Main
           addHearts={this.addHearts}
-          data={data}
+          data={this.state.rawData}
           handleShowModal={this.handleShowModal}
         />
         <Footer />
