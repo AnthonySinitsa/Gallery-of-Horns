@@ -51,9 +51,9 @@ class Main extends React.Component {
 
     return (
       <main>
-        <Form>
-          <Form.Label>Select Number of Horns</Form.Label>
-          <Form.Control as="select" onChange={this.filter}>
+        <Form style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <Form.Label className="form-label">Select Number of Horns</Form.Label>
+          <Form.Control as="select" onChange={this.filter} style={{ maxWidth: '200px' }}>
             <option value="">All</option>
             <option value="1">1 Horn</option>
             <option value="2">2 Horns</option>

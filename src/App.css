@@ -50,3 +50,10 @@ h1{
     transform: rotate(360deg);
   }
 }
+
+.form-label {
+  display: block; /* Ensures each label appears on a new line */
+  margin-bottom: 10px; /* Adds some space below the label */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Make the label bold for emphasis */
+}
