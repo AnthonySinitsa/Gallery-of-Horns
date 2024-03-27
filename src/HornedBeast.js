@@ -23,7 +23,7 @@ class HornedBeast extends React.Component {
     return (
       <Card className="HornedBeast">
         <Card.Title>{this.props.title}</Card.Title>
-        <Card.Text>❤️{this.state.likes}</Card.Text>
+        <Card.Text>👁️{this.state.likes}</Card.Text>
         <Card.Img
           onClick={() => {
             this.handleLikes();

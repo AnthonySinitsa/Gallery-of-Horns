@@ -52,8 +52,23 @@ h1{
 }
 
 .form-label {
-  display: block; /* Ensures each label appears on a new line */
-  margin-bottom: 10px; /* Adds some space below the label */
-  font-size: 1.2rem; /* Adjust font size as needed */
-  font-weight: bold; /* Make the label bold for emphasis */
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0; 
+}
+
+.footer p {
+  margin: 0;
+  line-height: 1.5;
 }
